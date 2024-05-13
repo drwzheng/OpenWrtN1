@@ -41,9 +41,8 @@ git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclas
 
 
 # 迅雷
-git clone https://github.com/sbwml/luci-app-xunlei package/xunlei
-make menuconfig # choose LUCI -> Applications -> luci-app-xunlei
-make V=s
+git clone https://github.com/gngpp/thunder && cd thunder
+cargo build --release && mv target/release/thunder .
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
