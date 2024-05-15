@@ -46,7 +46,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-a
 git clone https://github.com/gngpp/xunlei && cd xunlei
 cargo build --release && mv target/release/xunlei .
 # bash +x ./unpack.sh && cargo build --release --features embed && mv target/release/xunlei .
-./xunlei install
+./xunlei launcher
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
